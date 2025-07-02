@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alinhamento vertical</title>
+    <style>
+        div#fora {
+            background-color: purple;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            height: 97vh;
+
+            position: relative;
+        }
+
+        div#dentro {
+            background-color: yellow;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            width: 500px;
+            height: 300px;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); /*valor negativo: 1° esquerda 2° cima; valor positivo: 1° direita 2° baixo*/
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="fora">
+        <div id="dentro">
+
+        </div>
+    </div>
 </body>
 </html>
