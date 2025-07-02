@@ -6,16 +6,28 @@
     <title>Desafio 011</title>
 </head>
 <style>
+    * {
+    padding: 0px;
+    margin: 0px;
+    }
+
     div#fundo {
         background: black url(imagens/espaco.jpg) center center no-repeat fixed;
         background-size: cover;
-        height: 98vh;
+        height: 100vh;
         margin: 0px;
+        position: relative;
     }
 
     div#principal {
         background-image: url(imagens/astronauta.png);
         background-size: 100% 100%;
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 </style>
 <body>
