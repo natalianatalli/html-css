@@ -12,7 +12,7 @@
 </head>
 <body>
     <p>Meu primeiro formulário!</p>
-    <form action="cadastro.php">
+    <form action="cadastro.php"> <!--o metodo GET pode ser usado para formulários q nao precisam de muita segurança, como senha, numero de cartão ou envio de fotos; e so pode ser enviado ate 3k bytes--> <!--o metodo POST pode ser usado para dados sensiveis, mas o ideal é usa o metodo HTTPS, pode ser usado para envio de arquivos, ou para utilizar mais de 3k bytes-->
         <p><label for="inome">Nome:</label> <!--label: linkar o q esta sendo pedido com a caixa de preenchimento --> <input type="text" name="nome" id="inome"> <!--input: caixa de preenchimento, colocar sem um i na frente no id --> </p>
         <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Enviar"></p>
